@@ -65,3 +65,11 @@ MCP divides capabilities into three distinct primitives based on who initiates t
 This first phase, the "Tool" was built.
 
 Rememember that the MCP server doesn't maintain state between tool calls; it acts as a lightweight bridge translating LLM intents into local system executions.
+
+## Tag
+
+In order to be able to separate the phases on `git`, we are tagging the project at the end of each phase. Here's how it was done:
+
+- Merge everything to main and make sure main is safe
+- `git tag -a v0.1.0-phase1 -m "Phase 1: Foundational Git MCP Server"`
+- In order to check if the tagging worked: `git tag -n`
